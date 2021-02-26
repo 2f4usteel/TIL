@@ -12,3 +12,4 @@ Something interesting?
 * at_exit() - Converts block to a Proc object (and therefore binds it at the point of call) and registers it for execution when the program exits. If multiple handlers are registered, they are executed in reverse order of registration.
 Ex: ```at_exit { puts "cruel world" }```
 
+* The default `method_missing` actually lives in the Kernel module, which is included by Object
